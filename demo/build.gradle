@@ -23,14 +23,21 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
+	// 使用JPA方法
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
 	// Lombok (用於 @Data 註解)
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 
+	// 使用 @NotBlank, @Null, @Pattern 等註解
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+
 	// 資料庫驅動
 	runtimeOnly 'com.mysql:mysql-connector-j'
+
+	// swagger
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
 }
 
 tasks.named('test') {
