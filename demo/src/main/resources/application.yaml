@@ -13,3 +13,9 @@ spring:
     show-sql: false
     hibernate:
       ddl-auto: update
+springdoc:
+  swagger-ui:
+    path: /api
+  api-docs:
+    # OpenAPI 資料的後端路徑
+    path: /v3/api-docs
